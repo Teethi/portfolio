@@ -1,68 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="style\profile.css" />
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teethi portfolio</title>
-    <head></head>style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 71);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover {
+        color: blueviolet;
+      }
+      nav ul li a:current {
+        color: blueviolet;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+        align-items: center;
+        margin: auto;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background: rgb(76, 7, 141);
+        color: whitesmoke;
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection {
+      }
+      .rightsection img {
+        width: 100%;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.5rem;
+      }
+      .secondsection .box {
+        background: white;
+        width: 65vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: aliceblue;
+        margin: 0 120px;
+      }
+      .image-top {
+        width: 25px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 100px;
+        width: 150px;
+        font-size: 12px;
+        color: rgb(167, 164, 164);
+      }
+      footer {
+        background-color: #1c1b2d;
+        height: 200px;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 123px;
+      }
+    </style>
   </head>
   <body>
-    <div class="profile-container">
-      <img
-        class="profile-image"
-        src="../assets/TEETHI_photo.jpeg"
-        alt="Profile Image"
-      />
-      <h1 class="profile-name">TEETHI KANTHE</h1>
-      <p class="profile-details">
-        Engineering Undergraduate Looking forward to utilizing my coding,
-        analytical skills and leadership experiences to contribute to the
-        community
-      </p>
-    </div>
-    
-    <ul>  
-        <li>   
-        <a href="#" class="fa fa-facebook"> </a>   
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-twitter"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-pinterest"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-linkedin"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-instagram"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-youtube"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-google"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-snapchat-ghost"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-skype"> </a></li></ul>
-
-    <div class="profile-social">
-      <span
-        ><a href="https://twitter.com/Teethi11"
-          ><img src="../assets/twitter_icon.png" alt="Facebook"
-        /></a>
-        <a href="https://www.instagram.com/teethi24/"
-          ><img src="../assets/instagram_icon.png" alt="Instagram"
-        /></a>
-        <a href="https://www.linkedin.com/in/teethi-kanthe-118064216/"
-          ><img
-            src="../assets\linkedin_media_portfolio_social_icon.png"
-            alt="Linkedin" /></a
-      ></span>
-    </div>
+    <header>
+      <nav>
+        <div class="left">Teethi's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="/aboutme.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contactme.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hey It's <span class="purple">Teethi</span> here!
+          <div>I am a proactive</div>
+          <div>learner</div>
+          <div >
+            <button class="btn">Download Resume</button>
+            <button class="btn">Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="assets\bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="text-gray">What have I done so far</span>
+        <h1>Work experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="/assets/bg.png" alt="" />
+            <div class="vertical-title">Vice Chairperson</div>
+            <div class="vertical-desc">
+              Finance and Analytics Club, S.P.I.T.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="/assets/bg.png" alt="" />
+            <div class="vertical-title">Technical Head</div>
+            <div class="vertical-desc">
+              Institution of Electronics and Telecommunication Engineers,
+              S.P.I.T.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="/assets/bg.png" alt="" />
+            <div class="vertical-title">Technical Head</div>
+            <div class="vertical-desc">Entrepreneurship Cell, S.P.I.T.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="/assets/bg.png" alt="" />
+            <div class="vertical-title">Software Developer Intern</div>
+            <div class="vertical-desc">
+              ICICI Lombard General Insurance Company Ltd.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>fef</li>
+            <li>ere</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>fef</li>
+            <li>ere</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>fef</li>
+            <li>ere</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
-  </html>
-
+</html>
