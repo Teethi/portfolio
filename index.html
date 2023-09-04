@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Teethi's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,9 +43,18 @@
       nav ul li a:hover {
         color: blueviolet;
       }
-      nav ul li a:current {
+      nav ul li a:active {
         color: blueviolet;
       }
+      .nav-link {
+        color: white;
+    }
+      .nav-item>a:hover {
+        color: blueviolet;
+    }
+      .navbar-nav>.active>a {
+        color: blueviolet;
+    }
       main hr {
         border: 0;
         background: #9c97f1;
@@ -77,6 +86,13 @@
         font-size: 20px;
         cursor: pointer;
       }
+      .leftsection .btn a {
+        padding: 12px;
+        background: rgb(76, 7, 141);
+        color: whitesmoke;
+        font-size: 20px;
+        cursor: pointer;
+      }
       .rightsection {
       }
       .rightsection img {
@@ -98,49 +114,53 @@
       }
       .secondsection .box {
         background: white;
-        width: 65vw;
-        height: 2px;
-        margin: 56px 0;
+        width: 98%;
+        height: 0.24vw;
+        margin: 10vw 0;
         display: flex;
       }
       .secondsection .vertical {
-        height: 93px;
-        width: 1px;
+        height: 6.8vw;
+        width: 0.15vw;
         background-color: aliceblue;
-        margin: 0 120px;
+        margin: 0 11vw;
       }
       .image-top {
-        width: 25px;
+        width: 3vw;
         position: relative;
-        top: -32px;
-        left: -9px;
+        top: -5vw;
+        left: -1.3vw;
       }
       .vertical-title {
         position: relative;
-        top: 75px;
-        width: 150px;
+        top: 6.8vw;
+        width: 8vw;
       }
       .vertical-desc {
         position: relative;
-        top: 100px;
-        width: 150px;
-        font-size: 12px;
+        top: 8vw;
+        width: 10vw;
+        font-size: 1 vw;
         color: rgb(167, 164, 164);
       }
       footer {
         background-color: #1c1b2d;
-        height: 200px;
+        height: 15vw;
       }
       .footer {
         display: flex;
-        padding: 23px 122px;
+        padding: 2vw 25vw;
         justify-content: space-evenly;
       }
       .footer ul {
         list-style: none;
       }
       .footer > div {
-        width: 123px;
+        width: 20vw;
+      }
+      .footer-img{
+        width: 7vw;
+        height: 7vw;
       }
     </style>
   </head>
@@ -149,11 +169,11 @@
       <nav>
         <div class="left">Teethi's Portfolio</div>
         <div class="right">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="/aboutme.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contactme.html">Contact Me</a></li>
+          <ul class="navbar-nav">
+            <li class="navbar-item active"><a href="">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="/aboutme.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contactme.html">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -165,8 +185,8 @@
           <div>I am a proactive</div>
           <div>learner</div>
           <div >
-            <button class="btn">Download Resume</button>
-            <button class="btn">Github</button>
+            <button class="btn"><a href="/assets/Resume_Teethi_Kanthe.pdf" target="_blank" >Resume</a></button>
+            <button class="btn"><a href="https://github.com/Teethi" target="_blank">Github</a></button>
           </div>
         </div>
         <div class="rightsection">
@@ -203,6 +223,7 @@
             <div class="vertical-title">Software Developer Intern</div>
             <div class="vertical-desc">
               ICICI Lombard General Insurance Company Ltd.
+              <a href="/assets/CERTIFICATE_OF_INTERNSHIP_Teethi Kanthe.pdf" target="_blank">Certificate</a>
             </div>
           </div>
         </div>
@@ -211,25 +232,18 @@
     <footer>
       <div class="footer">
         <div class="footer-first">
-          <h3>Developer portfolio</h3>
+          <a target="_blank" href="https://www.linkedin.com/in/teethi-kanthe-118064216/"><img class="footer-img" src="/assets/linkedin_gradient.png" alt=""></a>
         </div>
         <div class="footer-second">
-          <ul>
-            <li>fef</li>
-            <li>ere</li>
-          </ul>
+          <a target="_blank" href="https://www.instagram.com/teethi24/"><img class="footer-img" src="/assets/insta_gradient.png" alt=""></a>
         </div>
         <div class="footer-third">
-          <ul>
-            <li>fef</li>
-            <li>ere</li>
-          </ul>
+          <a target="_blank" href="https://twitter.com/Teethi11"><img class="footer-img" src="/assets/twitter_gradient.png" alt=""></a>
+          
         </div>
         <div class="footer-fourth">
-          <ul>
-            <li>fef</li>
-            <li>ere</li>
-          </ul>
+          <a target="_blank" href="https://github.com/Teethi"><img class="footer-img" src="/assets/git_gradient.png" alt=""></a>
+          
         </div>
       </div>
     </footer>
