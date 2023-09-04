@@ -174,12 +174,12 @@ footer {
   color: aliceblue;
 }
 .email-button {
-  padding: 0.5vw;
+  padding: 0.2vw;
   background: rgb(76, 7, 141);
   color: whitesmoke;
-  border: 0.2vw solid whitesmoke;
-  border-radius: 1vw;
-  font-size: 2vw;
+  border: 0.1vw solid whitesmoke;
+  border-radius: 0.5vw;
+  font-size: 1vw;
   cursor: pointer;
 }
 .nav-link {
